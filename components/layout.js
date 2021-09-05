@@ -4,10 +4,9 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'MRN'
-export const siteTitle = 'MRN || '
+const name = 'thank u, next'
+export const siteTitle = 'Learning Next.js'
 
-// eslint-disable-next-line react/prop-types
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
