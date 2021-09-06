@@ -7,7 +7,7 @@ import { getUserData } from '../lib/user'
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
-  const user = getUserData()
+  const user = await getUserData()
   return {
     props: {
       allPostsData,
@@ -45,8 +45,7 @@ export default function Home(props) {
           </Link>
         </h1>
         <p>
-          (This is a sample website - you’ll be building a site like this on{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
+          <div dangerouslySetInnerHTML={{ __html: props.user.contentHtml }} />
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
@@ -54,7 +53,9 @@ export default function Home(props) {
         <ul className={utilStyles.list}>
           {props.allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
+              <Link href={"/posts/" + `${id}`}>
               {title}
+              </Link>
               <br />
               {id}
               <br />
