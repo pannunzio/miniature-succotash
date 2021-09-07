@@ -1,4 +1,6 @@
 ---
+slug: 'slug-2'
+layout: 'post'
 title: 'Lorem ipsum dolor'
 date: '2021-03-01'
 ---
