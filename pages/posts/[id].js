@@ -25,6 +25,7 @@ export default function Post({ postData }) {
 	if (router.isFallback) {
 		return <div>LOADING...</div>
 	}
+
 	return <Layout>
 		<Head>
 			<title>{postData.title}</title>
@@ -33,7 +34,6 @@ export default function Post({ postData }) {
 		{postData.id}
 		<br />
 		{postData.date}
-		{/* dangerouslySetInnerHTML is for doing something risky on purpose - (might) exposes your HTML to XSS attacks */}
 		<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 	</Layout>
 }
