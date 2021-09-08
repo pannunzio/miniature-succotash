@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllPostIds, getPostData } from '../../lib/locally-stored'
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id)
