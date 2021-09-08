@@ -13,26 +13,12 @@ export async function getStaticProps() {
   }
 }
 
-/**
- * export async function getServerSideProps(context) {
-    return {
-      props: {
-
-        Because getServerSideProps is called at request time, its parameter (context) contains request specific parameters.
-
-        You should use getServerSideProps only if you need to pre-render a page whose data must be fetched at request time.
-        Time to first byte (TTFB) will be slower than getStaticProps because the server must compute the result
-        on every request, and the result cannot be cached by a CDN without extra configuration.
-      }
-    }
-  }
- */
-
 export default function Home(props) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
 
       <section className={utilStyles.headingMd}>
