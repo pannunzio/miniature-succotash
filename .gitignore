@@ -2,21 +2,25 @@ node_modules
 package-lock.json
 LICENSE
 /.vscode/
+*.gitkeep
+/studio/yarn.lock
 
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
+/studio/node_modules
+/web/node_modules
 
 # testing
 /coverage
 
 # next.js
-/.next/
-/out/
+/web/.next/
+/web/out/
 
 # production
-/build
+/web/build
 
 # misc
 .DS_Store
@@ -29,3 +33,4 @@ yarn-error.log*
 # local env files
 .env.*.local
 .env.local
+studio/plugins/.gitkeep
