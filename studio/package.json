@@ -1,0 +1,34 @@
+{
+  "name": "learningsanity",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "pannunzio <mari.p.dequeiroz@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^1.149.19",
+    "@sanity/components": "^1.149.19",
+    "@sanity/core": "^1.149.19",
+    "@sanity/default-layout": "^1.149.19",
+    "@sanity/default-login": "^1.149.18",
+    "@sanity/desk-tool": "^1.149.19",
+    "@sanity/vision": "^1.149.16",
+    "prop-types": "15.6",
+    "react": "16.9",
+    "react-dom": "16.9",
+    "react-router": "^4.4.0-beta.8"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pannunzio/miniature-succotash.git"
+  }
+}
