@@ -1,4 +1,6 @@
 ---
+slug: 'slug-1'
+layout: 'post'
 title: 'Lorem ipsum'
 date: '2020-01-01'
 ---
