@@ -28,10 +28,10 @@ export default function Post({ postData }) {
 
 	return <Layout>
 		<Head>
-			<title>{postData.title}</title>
+			<title>Locally saved {postData.title}</title>
 		</Head>
 		<br />
-		{postData.id}
+		<h1>Locally saved post: {postData.id}</h1>
 		<br />
 		{postData.date}
 		<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />

@@ -9,7 +9,6 @@
   "dependencies": {
     "eslint-plugin-prettier": "^4.0.0",
     "gray-matter": "^4.0.3",
-    "netlify-cms-app": "^2.15.40",
     "next": "^11.1.2",
     "prettier": "^2.3.2",
     "react": "17.0.2",
