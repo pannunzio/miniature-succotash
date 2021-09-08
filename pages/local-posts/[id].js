@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 import Layout from '../../components/layout'
-import { getAllPostIds, getPostData } from '../../lib/posts'
+import { getAllPostIds, getPostData } from '../../lib/locally-stored'
 
 export async function getStaticProps({ params }) {
 	const postData = await getPostData(params.id)
@@ -28,10 +28,10 @@ export default function Post({ postData }) {
 
 	return <Layout>
 		<Head>
-			<title>{postData.title}</title>
+			<title>Locally saved {postData.title}</title>
 		</Head>
 		<br />
-		{postData.id}
+		<h1>Locally saved post: {postData.id}</h1>
 		<br />
 		{postData.date}
 		<div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
