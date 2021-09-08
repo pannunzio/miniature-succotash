@@ -1,0 +1,8 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "scripts": {
+    "build:web": "npm --prefix web run build",
+    "build:studio": "npm --prefix studio sanity start"
+  }
+}
