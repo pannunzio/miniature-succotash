@@ -3,7 +3,7 @@ package-lock.json
 LICENSE
 /.vscode/
 *.gitkeep
-/studio/yarn.lock
+yarn.lock
 /.next/
 
 # dependencies
