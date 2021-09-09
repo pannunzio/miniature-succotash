@@ -4,6 +4,7 @@ LICENSE
 /.vscode/
 *.gitkeep
 /studio/yarn.lock
+/.next/
 
 # dependencies
 /node_modules
