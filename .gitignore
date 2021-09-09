@@ -10,18 +10,16 @@ LICENSE
 /node_modules
 /.pnp
 .pnp.js
-/studio/node_modules
-/web/node_modules
 
 # testing
 /coverage
 
 # next.js
-/web/.next/
-/web/out/
+.next/
+out/
 
 # production
-/web/build
+build
 
 # misc
 .DS_Store
@@ -34,4 +32,3 @@ yarn-error.log*
 # local env files
 .env.*.local
 .env.local
-studio/plugins/.gitkeep
